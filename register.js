@@ -40,7 +40,7 @@ signUpForm.addEventListener('submit', (event) => {
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       alert("Account created successfully! Redirecting to homepage...");
-      window.location.href = "homepage.html"; // Redirect to your homepage
+      //window.location.href = "homepage.html"; // Redirect to your homepage
     })
     .catch((error) => {
       alert(`Sign-Up Error: ${error.message}`);
