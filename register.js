@@ -67,7 +67,7 @@ signInForm.addEventListener('submit', (event) => {
 
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      alert("Sign-In successful! Redirecting to homepage...");
+      //alert("Sign-In successful! Redirecting to homepage...");
       window.location.href = "homepage.html"; // Redirect to your homepage
     })
     .catch((error) => {
