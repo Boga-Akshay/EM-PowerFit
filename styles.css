@@ -291,9 +291,7 @@ iframe{
         background-size: cover;
     }
 
-    h1{
-        color: whitesmoke !important;
-    }
+    
     #timerDisplay{
         color: whitesmoke;
     }
