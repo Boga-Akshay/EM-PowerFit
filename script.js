@@ -53,25 +53,7 @@ toggleButton.addEventListener('click', () => {
         }
     });
 
-    // Select the password input and the show/hide icon
-const passwordField = document.getElementById('password');
-const showPasswordIcon = document.getElementById('showPassword');
-
-// Add an event listener to toggle password visibility when the eye icon is clicked
-showPasswordIcon.addEventListener('click', () => {
-    // Check the type of the password field and toggle between password and text
-    const type = passwordField.type === 'password' ? 'text' : 'password';
-    passwordField.type = type;
-    
-    // Toggle the eye icon between open and closed
-    if (passwordField.type === 'password') {
-        showPasswordIcon.innerHTML = '<i class="fas fa-eye"></i>'; // Closed eye
-    } else {
-        showPasswordIcon.innerHTML = '<i class="fas fa-eye-slash"></i>'; // Open eye
-    }
-});
-
-
+  
 
 
 
