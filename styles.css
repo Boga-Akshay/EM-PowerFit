@@ -1,0 +1,308 @@
+/* Base styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    color: #2a2a2a;
+}
+
+#toggle-mode {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+
+/* Day buttons styling */
+.day-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-btn {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #6b98f7;
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.day-btn img {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+.day-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .day-btn {
+    background-color: #444;
+}
+
+body.dark-mode #toggle-mode {
+    background-color: #888;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .day-btn {
+        width: 150px;
+        height: 150px;
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+/* Video grid styling for day pages */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.video-box {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 15px;
+    
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+
+
+
+
+.back-btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/*#toggle-mode{
+    position: relative !important;
+    right: 2% !important;
+    top: 20px !important;
+
+}
+    */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #toggle-mode {
+        margin-left: auto;
+    }
+    
+
+
+
+
+/* Stopwatch Section Styling */
+/*
+#timer-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+*/
+
+#timer-section {
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    grid-template-columns: 2fr 2fr;
+    gap:10px;
+    /*justify-content: flex-end;*/
+    /*align-items: center;*/
+    /*position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin-top: 20px;*/
+}
+
+#timerDisplay {
+    font-size: 4rem;
+    margin: 0 20px;
+    color: #333;
+}
+
+/* Button Styling */
+#startBtn, #stopBtn {
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#startBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#stopBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+#startBtn:hover {
+    background-color: #45a049;
+}
+
+#stopBtn:hover {
+    background-color: #e53935;
+}
+
+#resetBtn {
+    background-color: #ff9800;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#resetBtn:hover {
+    background-color: #fb8c00;
+}
+
+body{
+    background-color: #9EDF9C;
+}
+
+
+
+
+
+
+
+iframe{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.dark-mode {
+    background-color: #333;  /*Dark background */
+    color: #fff; /* Light text for general content */
+    }
+    
+    .dark-mode header h1  {
+    /*background-color: #444;  Darker header background */
+    color: #fff; /* Light text for header */
+    }
+    
+    .dark-mode button {
+    background-color: #666; /* Darker button background */
+    color: #fff; /* Light text for buttons */
+    }
+    
+    /* Add this for heading 2 */
+    .dark-mode h2 {
+    color: #fff; /* White text for headings */
+    }
+
+    .dark-mode #timerDisplay {
+        color: #fff; /* White color for timer text */
+    }
+
+    body {
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('./d5d9b6c0-31b6-4bb3-8609-8f1f7e4a3d49.jpeg') no-repeat center center fixed;
+        background-size: cover;
+        opacity: 0.6; /* Adjust this value (0.0 to 1.0) for opacity */
+        z-index: -1; /* Place behind all content */
+    }
+
+    body {
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), 
+                    url('./Logos/HomeBg.jpeg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    h1{
+        color: whitesmoke !important;
+    }
+    #timerDisplay{
+        color: whitesmoke;
+    }
+    
+    
+
+
+
+
+
+
+   

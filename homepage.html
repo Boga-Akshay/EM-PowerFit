@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Power Fit - Weekly Gym Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="heading">Weekly Gym Exercises</h1>
+            <button id="toggle-mode">Light Mode</button>
+        </header>
+        <main>
+            <div class="day-buttons">
+                <a href="./days_Pages/monday.html" class="day-btn"><img src="./Logos/Chest & Back.jpg" alt="Monday">Monday <br> Chest & Back</a>
+                <a href="./days_Pages/tuesday.html" class="day-btn"><img src="./Logos/Back & Arm.jpg" alt="Tuesday">Tuesday <br> Back & Biceps</a>
+                <a href="./days_Pages/wednesday.html" class="day-btn"><img src="./Logos/Leg & Abs.jpg" alt="Wednesday">Wednesday <br> Leg & Abs</a>
+                <a href="./days_Pages/thursday.html" class="day-btn"><img src="./Logos/Biceps & Triceps.jpg" alt="Thursday">Thursday <br>Biceps & Triceps</a>
+                <a href="./days_Pages/friday.html" class="day-btn"><img src="Logos/Sholders & Arms.jpg" alt="Friday">Friday <br> Shoulder & Arms</a>
+                <a href="./days_Pages/saturday.html" class="day-btn"><img src="./Logos/Leg & Abs.jpg" alt="Saturday">Saturday <br> Leg & Abs</a>
+            </div>
+        </main>
+    </div>
+    <div id="timer-section">
+        <p id="timerDisplay">00:00</p>
+        <button id="startBtn" onclick="startTimer()">Start</button>
+        <button id="resetBtn" onclick="resetTimer()">Reset</button>
+        <button id="stopBtn" onclick="stopTimer()">Stop</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
