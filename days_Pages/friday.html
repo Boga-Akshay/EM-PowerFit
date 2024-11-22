@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friday - Sholder & Arms</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <style>
+        .Sholder, .Arms {
+   /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    margin-bottom: 40px;*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+    gap: 1rem; /* Adjust the gap between items */
+    margin-bottom: 40px;
+    }
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F6D6D6;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Friday - Sholder & Arms</h1>
+            <button id="toggle-mode" style="padding: 10px 20px; border-radius: 25px; background-color: #72BF78; border: none; color: white; font-size: 16px; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                Light Mode
+            </button>
+
+            <a href="../homepage.html" class="back-btn">
+                <button style="background-color: #72BF78; padding: 8px; border-radius: 15px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                    Back to Home
+                </button>
+            </a>
+            
+            <a href="../index.html" class="back-btn">
+                <button style="background-color: lightblue; padding: 8px; border-radius: 15px; position: absolute; right: 20px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">
+                    Logout
+                </button>
+            </a>
+        </header>
+
+
+
+        <div class="timeposition">
+            <div id="timer-section">
+                <p id="timerDisplay">00:00</p>
+                <button id="startBtn" onclick="startTimer()">Start </button>
+                <button id="resetBtn" onclick="resetTimer()">Reset</button>
+                <button id="stopBtn" onclick="stopTimer()">Stop</button> 
+            </div>
+        </div>
+
+
+
+        <main>
+            <div class="video-grid">
+                <h2>Sholder Excercises</h2>
+                <div class="Sholder">
+                    <div class="video-wrapper">
+                        <p>Sholder Exercise-1</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Friday - Shoulder & Arms/SHOLDERS-1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Sholder Exercise-2</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Friday - Shoulder & Arms/SHOLDERS-2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Sholder Exercise-3</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Friday - Shoulder & Arms/SHOLDERS-3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Sholder Exercise-4</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Friday - Shoulder & Arms/SHOLDERS-4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Sholder & Back</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Friday - Shoulder & Arms/SHOLDERS & BACK.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                </div>
+
+                <h2>Arms</h2>
+                <div class="Arms dark-mode">
+                    <div class="video-wrapper">
+                        <p>Triceps Exercise-1</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Thursday - Biceps & Triceps/TRICEPS-1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Triceps Exercise-2</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Thursday - Biceps & Triceps/Triceps-2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Triceps Exercise-3</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Thursday - Biceps & Triceps/TRICEPS-3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Triceps Exercise-4</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Thursday - Biceps & Triceps/TRICEPS-4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Triceps Exercise-5</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Thursday - Biceps & Triceps/Triceps-5 (Wrist).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+                    <div class="video-wrapper">
+                        <p>Biceps Exercise-1</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Tuesday - Back & Biceps/biceps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Biceps Exercise-2</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Tuesday - Back & Biceps/Biceps_2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Biceps Exercise-3</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Tuesday - Back & Biceps/Biceps_3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Biceps & Triceps</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Tuesday - Back & Biceps/Biceps & Triceps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Biceps-Chest-ABS Exercise-1</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Tuesday - Back & Biceps/Biceps - Chest - Abs.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="../script.js"></script>
+</body>
+</html>
