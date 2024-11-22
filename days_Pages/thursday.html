@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrusday - Biceps & Triceps</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <style>
+        .Triceps, .Biceps {
+    /* display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 50px;
+     margin-bottom: 40px;*/
+     display: grid;
+     grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+     gap: 1rem; /* Adjust the gap between items */
+     margin-bottom: 40px;
+     }
+     
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F6D6D6;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Thrusday - Biceps & Triceps</h1>
+            <button id="toggle-mode">Light Mode</button>
+            <a href="../index.html" class="back-btn"><button style="background-color: #72BF78; padding: 8px; border-radius: 15px;">Back to Home</button></a>
+        </header>
+
+
+
+        <div class="timeposition">
+            <div id="timer-section">
+                <p id="timerDisplay">00:00</p>
+                <button id="startBtn" onclick="startTimer()">Start </button>
+                <button id="resetBtn" onclick="resetTimer()">Reset</button>
+                <button id="stopBtn" onclick="stopTimer()">Stop</button> 
+            </div>
+        </div>
+
+
+
+        <main>
+            <div class="video-grid">
+                <h2>Triceps Exercises</h2>
+                <div class="Triceps">
+                    <div class="video-wrapper">
+                        <p>Triceps Exercise-1</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Thursday - Biceps & Triceps/TRICEPS-1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Triceps Exercise-2</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Thursday - Biceps & Triceps/Triceps-2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Triceps Exercise-3</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Thursday - Biceps & Triceps/TRICEPS-3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Triceps Exercise-4</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Thursday - Biceps & Triceps/TRICEPS-4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Triceps Exercise-5</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Thursday - Biceps & Triceps/Triceps-5 (Wrist).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <h2>Biceps</h2>
+                <div class="Biceps dark-mode">
+                    <div class="video-wrapper">
+                        <p>Biceps Exercise-1</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Tuesday - Back & Biceps/biceps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Biceps Exercise-2</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Tuesday - Back & Biceps/Biceps_2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Biceps Exercise-3</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Tuesday - Back & Biceps/Biceps_3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Biceps & Triceps</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Tuesday - Back & Biceps/Biceps & Triceps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Biceps-Chest-ABS Exercise-1</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Tuesday - Back & Biceps/Biceps - Chest - Abs.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="../script.js"></script>
+</body>
+</html>

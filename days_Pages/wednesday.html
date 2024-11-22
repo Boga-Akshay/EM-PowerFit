@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wednesday - Legs & Abs</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <style>
+        .Legs, .Abs {
+    /* display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 50px;
+     margin-bottom: 40px;*/
+     display: grid;
+     grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+     gap: 1rem; /* Adjust the gap between items */
+     margin-bottom: 40px;
+     }
+     
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F6D6D6;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Wednesday - Legs & Abs</h1>
+            <button id="toggle-mode">Light Mode</button>
+            <a href="../index.html" class="back-btn"><button style="background-color: #72BF78; padding: 8px; border-radius: 15px;">Back to Home</button></a>
+        </header>
+
+
+
+        <div class="timeposition">
+            <div id="timer-section">
+                <p id="timerDisplay">00:00</p>
+                <button id="startBtn" onclick="startTimer()">Start </button>
+                <button id="resetBtn" onclick="resetTimer()">Reset</button>
+                <button id="stopBtn" onclick="stopTimer()">Stop</button> 
+            </div>
+        </div>
+
+
+
+        <main>
+            <div class="video-grid">
+                <h2>Abs Exercises</h2>
+                <div class="Legs">
+                    <div class="video-wrapper">
+                        <p>Abs Exercise-1</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/ABS-1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Abs Exercise-2</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/ABS-2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Abs Exercise-3</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/ABS-3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Abs Exercise-4</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/ABS-4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Abs Exercise-5</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/ABS-5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Abs Exercise-6</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/ABS-6.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Abs Exercise-7</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/ABS-7.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Abs Exercise-8</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/ABS-8.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Abs - biceps - Chest</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/Biceps - Chest - Abs.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <h2>Legs</h2>
+                <div class="Legs dark-mode">
+                    <div class="video-wrapper">
+                        <p>Legs Exercise-1</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/LEGS-1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Legs Exercise-2</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/LEGS-2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Legs Excercise-3</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/LEGS-3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Legs Exercise-4</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/LEGS-4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Legs Exercise-5</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/LEGS-5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Legs Excercise-6</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/LEGS-6.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Legs Exercise-7</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/LEGS-7.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Legs Exercise-8</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/LEGS-8.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <p>Legs Exercise-9</p>
+                        <video controls>
+                            <source src="../GYM_Videos/Wednesday - Legs & Abs/LEGS-9.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="../script.js"></script>
+</body>
+</html>
