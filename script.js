@@ -2,25 +2,19 @@
 // Dark/Light Mode Toggle
 /*
 const toggleButton = document.getElementById('toggle-mode');
-const body = document.body;
-const heading = document.querySelector('.heading'); // Select the heading element
+const heading = document.getElementsByClassName('heading')[0]; // Access the first element in the collection
 
-// Add an event listener for the button click
 toggleButton.addEventListener('click', () => {
-    // Toggle a class on the body element
-    body.classList.toggle('dark-mode');
+    document.body.classList.toggle('dark-mode');
 
-    // Update the button text
-    if (body.classList.contains('dark-mode')) {
-        toggleButton.textContent = 'Dark Mode';
-        heading.style.color = 'white'; // Set heading text color to white
-        heading.style.backgroundColor = 'black'; // Set heading background to black
+    // Check if dark mode is active and set heading color
+    if (document.body.classList.contains('dark-mode')) {
+        heading.style.color = 'white';
     } else {
-        toggleButton.textContent = 'Light Mode';
-        heading.style.color = '#333'; // Restore original text color
-        heading.style.backgroundColor = 'whitesmoke'; // Restore original background
+        heading.style.color = 'black';
     }
 });
+
 */
 
 /*
@@ -43,23 +37,33 @@ toggleButton.addEventListener('click', () => {
 });*/
 
 
+    
+
+
     const toggleButton = document.getElementById('toggle-mode');
-    const body = document.body;
+const body = document.body;
+const heading = document.querySelector('.heading'); // Select the heading element
 
-    // Add an event listener for the button click
-    toggleButton.addEventListener('click', () => {
-        // Toggle a class on the body element
-        body.classList.toggle('dark-mode');
+// Add an event listener for the button click
+toggleButton.addEventListener('click', () => {
+    // Toggle a class on the body element
+    body.classList.toggle('dark-mode');
 
-        // Update the button text
-        if (body.classList.contains('dark-mode')) {
-            toggleButton.textContent = 'Dark Mode';
-        } else {
-            toggleButton.textContent = 'Light Mode';
-        }
-    });
+    // Update the button text
+    if (body.classList.contains('dark-mode')) {
+        toggleButton.textContent = 'Dark Mode';
+        heading.style.color = 'white'; // Set heading text color to white
+        heading.style.backgroundColor = 'black'; // Set heading background to black
+    } else {
+        toggleButton.textContent = 'Light Mode';
+        heading.style.color = '#333'; // Restore original text color
+        heading.style.backgroundColor = 'whitesmoke'; // Restore original background
+    }
+});
 
-  
+   
+
+
 
 
 
